@@ -1,0 +1,13 @@
+END {
+    print "どこにあるかにかかわらず一番最後に実行される";
+};
+
+## http://perldoc.jp/docs/perl/5.14.1/perltoot.pod
+## perltoot - トムによる Perl オブジェクト指向チュートリアル
+DESTROY {
+    ..ファイルopneの終了とかDB接続後のclose処理とか...
+};
+
+my @data (qw/1 300 20 5/);
+# my @data ("1", "300", "20", "5");
+print "$date[2] / $date[3]";
